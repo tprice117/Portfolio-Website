@@ -1,6 +1,16 @@
 html {
   scroll-behavior: smooth;
 }
+.hero-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+.hero {
+  display: flex;
+  position: relative;
+  align-items: center;
+  text-align: center;
+}
 body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
@@ -41,6 +51,7 @@ svg:hover {
 }
 .hero h1 {
   display: flex;
+  margin-bottom: 250px;
 }
 .titlePage-container {
   color: white;
@@ -66,16 +77,18 @@ svg:hover {
   flex-direction: column;
 }
 .section-heading {
+  font-size: 42px;
   padding-top: 2.4%;
   margin-bottom: 10rem;
   display: flex;
   justify-content: center;
+  font-weight: 600;
 }
 .profile {
   border-radius: 50%;
 }
 .aboutme-blurb {
-  font-size: 1.8rem;
+  font-size: 1.3rem;
   width: 500px;
   line-height: 1.8;
 }
@@ -87,7 +100,6 @@ svg:hover {
 
 .skills {
   display: flex;
-  justify-content: space-around;
   align-items: center;
   align-content: center;
   flex-wrap: wrap;
@@ -126,4 +138,25 @@ footer {
 .backtotop {
   color: rgba(255, 255, 255, 0.87);
   font-weight: 600;
+}
+
+/* @keyframes slideFromLeft {
+  from {
+    transform: translateX(-300px);
+  }
+  to {
+    transform: translateX(0);
+  }
+} */
+
+.slideFromLeft {
+  opacity: 0;
+  transform: translateX(-100%);
+  transition: all 1s;
+}
+
+.show {
+  filter: blur(0);
+  transform: translateX(0);
+  opacity: 1;
 }
