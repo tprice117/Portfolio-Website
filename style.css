@@ -154,6 +154,8 @@ svg:hover {
   background-color: rgba(0, 0, 0, 0.473);
   border-radius: 10px;
   padding: 7%;
+  margin-top: 1.5%;
+  margin-bottom: 1.5%;
 }
 .skills__item-name {
   font-size: 1.2rem;
@@ -189,11 +191,79 @@ svg:hover {
   display: flex;
   justify-content: center;
 }
-.projects-content {
+.projects-content-left {
   display: flex;
   align-items: center;
+  margin-right: 2%;
+}
+.projects-content-right {
+  display: flex;
+  align-items: center;
+  margin-left: 2%;
+}
+.projects-content-blurb > h2 {
+  text-align: right;
 }
 /* PROJECT SECTION END */
+
+.contactMe-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 1%;
+}
+.contactMe__form {
+  display: flex;
+  flex-direction: column;
+  min-width: 60%;
+  min-height: 20%;
+  justify-content: space-between;
+}
+
+/* RESUME */
+#resume {
+  padding-bottom: 2%;
+}
+
+.resume-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  margin-left: 5%;
+  margin-right: 5%;
+  background-color: darkcyan;
+}
+a {
+  text-decoration: none;
+}
+a > img {
+  border-radius: 2%;
+}
+.img__wrapper {
+  transition: transform 0.2s;
+}
+.img__wrapper:hover {
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
+}
+.img__wrapper:hover .img__desc {
+  visibility: visible;
+  opacity: 1;
+}
+.img__desc {
+  position: relative;
+  margin-top: -10%;
+  text-align: center;
+  border-radius: 2%;
+  background: rgba(0, 0, 0, 0.708);
+  color: #fff;
+  visibility: hidden;
+  opacity: 0;
+}
+/* RESUME END */
 
 /* FOOTER */
 footer {
@@ -205,7 +275,7 @@ footer {
   padding-bottom: 5%;
 }
 .backtotop {
-  color: rgba(255, 255, 255, 0.87);
+  color: rgba(0, 0, 0, 0.87);
   font-weight: 600;
 }
 /* FOOTER END  */
