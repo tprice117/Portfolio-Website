@@ -110,7 +110,6 @@
       <hr />
       <h2 class="projects-heading section-heading slideFromLeft">Projects</h2>
       <div class="projectexample">
-        <h1>Print Job Tracker</h1>
         <div class="projects-content-left">
           <img class="project__pjt" src="skillsimgs/html.png">
           <div class="projects-content-blurb">
@@ -124,13 +123,15 @@
             Lorem Ipsum passages, and more recently with desktop publishing software like Aldus 
             PageMaker including versions of Lorem Ipsum.
             </p>
-            <h2>Learn More</h2>
+            <a href="https://github.com/tprice117/PJT-Final">
+              <button class="button button1">Learn More</button>
+            </a>
           </div> 
         </div>
         <div class="projects-content-right">
           <div class="projects-content-blurb">
             <h1>Spotify Discovery Extract</h1>
-            <h3>Skills Used: Python, API Interaction, HTML, CSS</h3>
+            <h3>Skills Used: Python, API Interaction, HTML, CSS, Flask</h3>
             <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum 
             has been the industry's standard dummy text ever since the 1500s, when an unknown printer 
             took a galley of type and scrambled it to make a type specimen book. It has survived not 
@@ -139,24 +140,30 @@
             Lorem Ipsum passages, and more recently with desktop publishing software like Aldus 
             PageMaker including versions of Lorem Ipsum.
             </p>
-            <h2>Learn More</h2>
+            <a href="https://github.com/tprice117/SpotifyExtract">
+              <button class="button button1">Learn More</button>
+
+            </a>
           </div>
           <img class="project__pjt" src="skillsimgs/html.png">
         </div>
         <div class="projects-content-left">
-          <img class="project__pjt" src="skillsimgs/html.png">
+          <img class="project__pjt" src="skillsimgs/html.png" width="512" height="512">
           <div class="projects-content-blurb">
             <h1>Portfolio Website</h1>
             <h3>Skills Used: HTML, CSS, JavaScript, Cloud Computing</h3>
-            <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum 
-            has been the industry's standard dummy text ever since the 1500s, when an unknown printer 
-            took a galley of type and scrambled it to make a type specimen book. It has survived not 
-            only five centuries, but also the leap into electronic typesetting, remaining essentially 
-            unchanged. It was popularised in the 1960s with the release of Letraset sheets containing
-            Lorem Ipsum passages, and more recently with desktop publishing software like Aldus 
-            PageMaker including versions of Lorem Ipsum.
+            <p> The Website you are currently on was completely made from scratch.
+              Even though I have experience working with web frameworks like Django, Flask, and ASP.NET.
+              I found that it would have been more satisfying and showcase my skills more if I were to create 
+              my portfolio website on my own, without the help of a web framework or online website builder like 
+              Wordpress or Wix. All of the HTML, CSS, and JavaScript you see is written entirely from the ground up,
+              and hosted on a Digital Ocean droplet.
+              
             </p>
-            <h2>Learn More</h2>
+            <a href="https://github.com/tprice117/Portfolio-Website">
+              <button class="button button1">Learn More</button>
+
+            </a>
           </div> 
         </div>
       </div>
@@ -173,17 +180,25 @@
             <p class="img__desc">Tyler's Current Resume</p>
           </a>
         </div>
+        <div class="img__wrapper">
+          <a href="https://www.credly.com/badges/66fe4171-a98c-4a53-9416-6139a8cfae4f">
+            <img src="skillsimgs/aws-cred.png" width="256" height="256">
+            <p class="img__desc">Tyler's AWS Certification</p>
+
+          </a>
+        </div>
       </div>
     </section>
     <section class="container contactMe" id="contactMe">
       <hr />
       <h2 class="contactMe-heading section-heading slideFromLeft">Contact Me</h2>
       <div class="contactMe-content">
-        <form class="contactMe__form" method="POST">
-          <input class="contactMe__form-name" name="name" placeholder="Name">
-          <input class="contactMe__form-email" type="email" placeholder="Email">
-          <textarea class="contactMe__form-body" name="body" placeholder="Message"></textarea>
-          <button typ="button" class="contact__form-submit" id="form-submit">Submit</button>
+        <p>Any message written through this form will go to my email as it is the best way to contact me.</p>
+        <form action="https://formspree.io/f/mbjnkjaq" class="contactMe__form" method="POST">
+          <input class="contactMe__form-name" name="text" placeholder="Name" required>
+          <input class="contactMe__form-email" type="email" name="email" placeholder="Email" required>
+          <textarea class="contactMe__form-body" name="message" placeholder="Message" rows="10" cols="10" required></textarea>
+          <button class="button1" id="form-submit" value="Send" type="submit">Submit</button>
         </form>
       </div>
 
@@ -210,6 +225,7 @@
       }
     </script>
   </body>
+
 </html>
 <!-- <div id="aboutMe" class="containerSection">
   <div class="sectionHeader">About Me</div>
