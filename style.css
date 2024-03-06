@@ -86,6 +86,7 @@ svg:hover {
   flex-direction: column;
   width: 70%;
 }
+
 .resume {
   background-color: rgb(2, 82, 156);
   margin-left: auto;
@@ -244,6 +245,10 @@ a:active {
 }
 .projects-content-blurb > h2 {
   text-align: right;
+}
+.project_image {
+  max-width: 50%;
+  max-height: 50%;
 }
 /* PROJECT SECTION END */
 
