@@ -243,12 +243,17 @@ a:active {
   align-items: center;
   margin-left: 2%;
 }
+.projects-content-blurb {
+  margin: 2%;
+}
 .projects-content-blurb > h2 {
   text-align: right;
 }
 .project_image {
   max-width: 50%;
   max-height: 50%;
+  padding-right: 2%;
+  padding-left: 2%;
 }
 /* PROJECT SECTION END */
 
