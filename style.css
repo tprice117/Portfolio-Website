@@ -195,7 +195,7 @@ svg:hover {
 
 /* PROJECT SECTION */
 .projectexample {
-  background-color: teal;
+  background-color: rgba(255, 255, 255, 0.123);
   margin: 5%;
   padding-top: 2%;
   padding-bottom: 2%;
@@ -292,7 +292,7 @@ a:active {
   padding-bottom: 1%;
   margin-left: 5%;
   margin-right: 5%;
-  background-color: darkcyan;
+  background-color: rgba(255, 255, 255, 0.123);
 }
 a {
   text-decoration: none;
