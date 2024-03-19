@@ -251,7 +251,7 @@ a:active {
 }
 .project_image {
   max-width: 50%;
-  max-height: 50%;
+  max-height: auto;
   padding-right: 2%;
   padding-left: 2%;
 }
